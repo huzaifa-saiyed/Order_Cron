@@ -1,0 +1,13 @@
+{{template config_path="design/email/header_template"}}
+
+Hello Admin,<br><br>
+
+A new order (ID: {{var order.getIncrementId()}}) has been received with a **pending** status. Please check it at your earliest convenience.<br><br>
+
+Order Details:<br>
+- Customer Name: {{var order.getCustomerName()}}<br>
+- Customer Email: {{var order.getCustomerEmail()}}<br>
+- Order Total: {{var order.getGrandTotal()}}<br><br>
+
+Best regards,<br>
+{{template config_path="design/email/footer_template"}}

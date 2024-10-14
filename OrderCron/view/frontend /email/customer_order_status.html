@@ -1,0 +1,10 @@
+{{template config_path="design/email/header_template"}}
+
+Dear {{var order.getCustomerName()}},<br><br>
+
+Thank you for your order with us! We wanted to inform you that your order (ID: {{var order.getIncrementId()}}) is currently in a **pending** status. Our team is reviewing your order and will get back to you as soon as possible.<br><br>
+
+If you have any questions or concerns, feel free to contact us.<br><br>
+
+Best regards,<br>
+{{template config_path="design/email/footer_template"}}
